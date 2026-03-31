@@ -82,3 +82,12 @@ table, th, td {
   padding: 10px;
   text-align: center;
 }
+
+code2{
+  background: #3a3a3a;
+  border-radius: 2px;
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}

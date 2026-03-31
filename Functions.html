@@ -24,12 +24,39 @@
                 <thead>
                     <th>Command</th>
                     <th>Description</th>
+                    <th>Code</th>
                 </thead>
 
                 <tbody>
                     <tr>
                         <td>func function_name(params):</td>
                         <td>Define function</td>
+                        <td><code2>func take_damage(amount: int): health -= amount</code2></code></td>
+                    </tr>
+                    <tr>
+                        <td>func name() -> Type:</td>
+                        <td>Function with return type <br>
+                        <td><code2>func get_health() -> int: return health</code2></td>
+                    </tr>
+                    <tr>
+                        <td>func name(param = default):</td>
+                        <td>Function with default parameters</td>
+                        <td><code2>func heal(amount = 10): health += amount</code2></td>
+                    </tr>
+                    <tr>
+                        <td>return value</td>
+                        <td>Return value from function</td>
+                        <td><code2>func is_alive() -> bool: return health > 0</code2></td>
+                    </tr>
+                    <tr>
+                        <td>pass</td>
+                        <td>Empty function body placeholder</td>
+                        <td><code2>func _ready(): pass</code2></td>
+
+                    </tr>
+                    <tr>
+                        <td>static func name():</td>
+
                     </tr>
                 </tbody>
             </table>
