@@ -64,6 +64,36 @@
                         <td>Called when node enters scene tree</td>
                         <td><code2>func _ready(): print("Node is ready") setup_game()</code2></td>
                     </tr>
+                    <tr>
+                        <td>func _process(delta):</td>
+                        <td>Called every frame</td>
+                        <td><code2>func _process(delta): position.x += speed * delta</code2></td>
+                    </tr>
+                    <tr>
+                        <td>func _physics_process(delta):</td>
+                        <td>Called every physics frame (fixed timestep)</td>
+                        <td><code2>func _physics_process(delta): velocity.y += gravity * delta move_and_slide()</code2></td>
+                    </tr>
+                    <tr>
+                        <td>func _input(event):</td>
+                        <td>handles input events</td>
+                        <td><code2>func _input(event): if event is InputEventKey: if event.pressed and event.keycode == KEY_SPACE: jump()</code2></td>
+                    </tr>
+                    <tr>
+                        <td>func _unhandled_input(event):</td>
+                        <td>Handle input not consumed by UI</td>
+                        <td><code2>func _unhandled_input(event): if event.is_action_pressed("shoot"): fire_weapon()</code2></td>
+                    </tr>
+                    <tr>
+                        <td>func _enter_tree():</td>
+                        <td>Called when node enters tree (before _ready)</td>
+                        <td><code2>func _enter_tree(): print("Entering scene tree")</code2></td>
+                    </tr>
+                    <tr>
+                        <td>func _exit_tree():</td>
+                        <td>Called when node exits tree</td>
+                        <td><code2>func _exit_tree(): cleanup_resources()</code2></td>
+                    </tr>
                 </tbody>
             </table>
         </section>
