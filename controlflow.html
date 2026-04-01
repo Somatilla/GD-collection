@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>GD Collection</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <header>
+        <h1>GD Collection</h1>
+        <nav>
+            <a href="./index.html">Home</a>
+        </nav>
+    </header>
+
+    <body>
+        <section class="page">
+            <h2 class="topic"><a href="https://cs.du.edu/~intropython/intro-to-programming/control_flow.html">Control flow</a></h2>
+            <p class="text">
+                Programs often need to take one action in certain cases, and different actions in different cases. <br>
+                Also, programs often need to repeat actions multiple times.<br>
+                These two ideas are called control flow. <br>
+                <a href="https://generalistprogrammer.com/cheatsheets/godot-gdscript">table by: https://generalistprogrammer.com/cheatsheets/godot-gdscript</a>
+            </p>
+            <table>
+                <thead>
+                    <th>Code</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>if condition:</td>
+                        <td>condicional statement</td>
+                        <td><code2>if health <= 0: die() elif health < 20: play_low_health_effect() else: play_normal_animation()</code2></td>
+                    </tr>
+                    <tr>
+                        <td>for i in range(n):</td>
+                        <td>loop n times</td>
+                        <td><code2>for i in range(5): spawn_enemy() for i in range(10, 20): print(i)</code2></td>
+                    </tr>
+                    <tr>
+                        <td>for item in array:</td>
+                        <td>Iterate over array</td>
+                        <td><code2>for enemy in enemies: enemy.update() for key in dictionary: print(key, dictionary[key])</code2></td>
+                    </tr>
+                    <tr>
+                        <td>while condition:</td>
+                        <td>while loop</td>
+                        <td><code2>while is_alive: update() await get_tree().process_frame</code2></td>
+                    </tr>
+                    <tr>
+                        <td>match value:</td>
+                        <td>Pattern matching (switch statement)</td>
+                        <td><code2>match state: "idle": idle_behavior() "running": run_behavior() _: print("Unknown state")</code2></td>
+                    </tr>
+                    <tr>
+                        <td>break</td>
+                        <td>exit loop early</td>
+                        <td><code2>for i in range(100): if found: break</code2></td>
+                    </tr>
+                    <tr>
+                        <td>continute</td>
+                        <td>Skip to next iteration</td>
+                        <td><code2>for enemy in enemies: if enemy.is_dead: continue enemy.attack()</code2></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <ul>
+                <li>
+                <a href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html">Godot Docs</a>
+                </li>
+                
+                <li>
+                <a href="https://www.gdquest.com/tutorial/godot/">GDquest beginner tutorials</a>
+                </li>
+                <li>
+                    <a href="controlflow.html">Control flow</a>
+                </li>
+                <li>
+                    <a href="Functions.html">Functions</a>
+                </li>
+            </ul>
+        </section>
+    </body>
+
+</html>
