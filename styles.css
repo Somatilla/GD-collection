@@ -72,11 +72,6 @@ section ul li a:hover {
   transition: 0.2s;
 }
 
-.topic {
-  color: #f5f5f5;
-  padding-bottom:2vh;
-  padding-left: 3vh;
-}
 
 .text {
   padding-left: 5vh;
